@@ -111,7 +111,7 @@ export class Arena {
                 const attacknumber=rollDice();
                 const attacking_power = attacker.attack * attacknumber;
                 const defendnumber=rollDice();                
-                const defending_power = defender.strength * rollDice();
+                const defending_power = defender.strength * defendnumber;
                 console.log(`die roll number for attack = ${attacknumber}\n`);
                 console.log(`${attacker?.name} hits ${defender?.name} with power = ${attacking_power}\n`);
                 console.log(`die roll number for defence = ${defendnumber}\n`);
